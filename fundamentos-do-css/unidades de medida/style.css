@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 header {
@@ -18,7 +19,7 @@ section {
     border: 1px solid #232323;
     display: inline-block;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 0;
     width: 75px;
 }
 
