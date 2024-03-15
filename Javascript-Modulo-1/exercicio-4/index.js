@@ -1,6 +1,7 @@
 let nome = prompt("E aí, turista! Qual é o seu nome?")
 let cidades = ""
 let contagem = 0
+
 let continuar = prompt("Você visitou alguma cidade? (Sim/Não)")
 
 while(continuar === "Sim"){
