@@ -4,7 +4,7 @@ const vagas = []
 
 // função de listas as vagas
 function listarVagas() {
-    const vagasEmTexto = vagas.reduce((textoFinal, vaga, indice) => {
+        const vagasEmTexto = vagas.reduce((textoFinal, vaga, indice) => {
       textoFinal += indice + ". "
       textoFinal += vaga.nome
       textoFinal += " (" + vaga.candidatos.length + " candidatos)\n"
@@ -37,6 +37,11 @@ function listarVagas() {
   // função para exibir uma vaga
   function exibirVaga() {
     const indice = prompt("Informe o índice da vaga que deseja exibir:")
+
+    if(indice >= vagas.length || indice < 0){
+        alert("Indice Inválido")
+        return
+    }
     const vaga = vagas[indice]
   
     const candidatosEmTexto = vaga.candidatos.reduce((textoFinal, candidato) => textoFinal + "\n - " + candidato, "")
