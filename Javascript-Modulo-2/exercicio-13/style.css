@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Para alinhar na vertical */
+  height: 90vh; /* Altura da tela inteira */
+  margin: 0;
+  text-align: center; /* Para centralizar o conteúdo */
+}
+
+h1 {
+  text-align: center; /* Para centralizar o texto */
+}
+
+button {
+  margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+#gameBoard {
+  background-color: #382a2a;
+  display: grid;
+  grid-template-columns: 9rem 9rem 9rem;
+  grid-template-rows: 9rem 9rem 9rem;
+  gap: 0.5rem;
+}
+
+#gameBoard span {
+  background-color: #dddddd9f;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+#gameBoard span.win {
+  background-color: #25a340;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
