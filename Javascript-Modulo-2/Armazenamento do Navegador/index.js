@@ -1,4 +1,3 @@
-
 //Session Storage
 document.getElementById("sessionBtn").addEventListener("click", function () {
   const input = document.getElementById("session");
@@ -11,7 +10,6 @@ document.getElementById("readSesssion").addEventListener("click", function () {
   alert("A informação salva é: " + info);
 });
 
-
 //Local Storage
 document.getElementById("localBtn").addEventListener("click", function () {
   const input = document.getElementById("local");
@@ -23,7 +21,6 @@ document.getElementById("readLocal").addEventListener("click", function () {
   const t = localStorage.getItem("text");
   alert("O texto salvo no local storage é: " + t);
 });
-
 
 //Cookies
 document.getElementById("cookieBtn").addEventListener("click", function () {
