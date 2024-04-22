@@ -11,6 +11,7 @@ class Book {
   
   const eragon = new Book("Eragon")
   const eldest = new Book("Eldest")
+ 
   
   eragon.publish()
   

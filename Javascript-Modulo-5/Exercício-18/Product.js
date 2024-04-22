@@ -16,7 +16,8 @@ class Product {
 
 const watch = new Product("Relógio de Pulso", "...", 80)
 watch.addToStock(99)
+
 console.log(watch)
-console.log(watch.calculateDiscount(15))
-console.log(watch.calculateDiscount(10))
-console.log(watch)
+console.log(watch.calculateDiscount(20))
+
+
