@@ -11,17 +11,22 @@ el.build().render()
 
 const form = new Form('body')
 
-const label = new Label('Nome:', form, { htmlFor: 'nameInput' })
-const input = new Input(form, { id: 'nameInput', name: 'birthday' })
-
 form.render()
 
-label.render()
-form.addChildren(input)
-
-form.addChildren(
-  new Component('br'),
+form.addChildren(  
   new Component('br'),
   new Label('Data de Nascimento:', { htmlFor: 'birthdayInput'}),
-  new Input(form, { id: 'birthdayInput', name: 'birthday', type: 'date' })
+  new Input(form, { id: 'birthdayInput', name: 'birthday', type: 'date' }),
+  new Component('br'),
+  new Component('br'),  
+  new Label('Nome:',{ htmlFor: 'nameInput' }),
+  new Input(form, { id: 'nameInput', name: 'name' }),
+  new Component('br'),
+  new Component('br'),
+  new Label('Sobrenome:',{ htmlFor: 'SobrenomeInput' }),
+  new Input(form, { id: 'SobrenomeInput', name: 'number' }),
+  new Component('br'),
+  new Component('br'),
+  new Label('Telefone:',{ htmlFor: 'TelefoneInput' }),
+  new Input(form, { id: 'TelefoneInput', name: 'number' })
 )
