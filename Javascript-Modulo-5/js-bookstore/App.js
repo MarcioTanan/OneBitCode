@@ -57,9 +57,9 @@ module.exports = class App {
     App.#database.saveOrder(order)
     order.data.items.forEach(({ product, quantity }) => {
       if (product instanceof Book) {
-        App.#database.removeBooksFromStock(product.name, quantity)
+        App.#database.removeBookFromStock(product.name, quantity)
       } else if (product instanceof Poster) {
-        App.#database.removePostersFromStock(product.name, quantity)
+        App.#database.removePosterFromStock(product.name, quantity)
       }
     })
   }
